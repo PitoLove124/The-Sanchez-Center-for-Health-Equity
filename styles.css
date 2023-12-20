@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&family=Poppins:wght@200&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    height: 100%;
+}
+
+.container {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 0px;
+}
+
+/* Home Section Styles */
+#home {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.showcase {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#bgvid {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    z-index: 1;
+}
+
+.text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.text p {
+    font-size: 1.2rem;
+}
+/* Navbar Styles */
+.navbar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 20px;
+    /*transition: all 0.5s ease;*/
+    z-index: 2;
+    width: 100%; /* Make sure the navbar stretches across the full width */
+}
+
+.navbar .container {
+    display: flex; /* Use flexbox to organize content */
+    justify-content: flex-end; /* Align the container's content to the right */
+    align-items: center; /* Align items vertically in the center */
+    width: 100%; /* Optional: Full width for the container */
+}
+
+.navbar-dark .navbar-nav {
+    list-style-type: none; /* Remove the dots */
+    padding-left: 0; /* Remove default padding */
+    display: flex; /* Make the nav items display in a row */
+    align-items: center; /* Center the links vertically */
+    margin: 0; /* Remove any default margin */
+}
+
+.navbar-dark .navbar-nav .nav-item {
+    margin-bottom: 0; /* No space at the bottom of each item */
+    margin-right: 10px; /* Space between the items */
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+    padding: 10px 20px;
+    transition: color 0.3s ease;
+    text-decoration: none; /* Remove the underline */
+    display: block;
+    font-size: 20px;
+     /* Treat links like block elements for a larger clickable area */
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: rgb(236, 96, 9); /* Set the hover color to red */
+}

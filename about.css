@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&family=Poppins:wght@200&display=swap");
+
+:root {
+    --red-pantone: #e63946;
+    --berkeley-blue: #1d3557;
+    --non-photo-blue: #a8dadc;
+    --cerulean: #457b9d;
+    --berkeley-blue: #1d3557;
+}
+
+
+/* Importing fonts */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&family=Poppins:wght@200&display=swap");
+
+/* Universal styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body {
+    background-color: var(--honeydew);
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 200px;
+}
+
+/* Main content area */
+/* General Section Styles */
+.Equity, .Initiatives, .About, .Center, .background, .Mission {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    height: 400px;  
+    padding: 100px; /* Unified padding */
+}
+
+/* Info Styles */
+/* Info Styles */
+
+.info { 
+    color: var(--red-pantone);
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+    padding: 0 30px;
+    font: 400 1.5rem/1.4 'Montserrat', sans-serif;
+}
+
+.info h2 {
+    font-size: 2.5rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: left; /* Changed to left for headers */
+    font-weight: strong;
+    
+}
+
+.info p, ul {
+    color: var(--berkeley-blue);
+    font-size: 1.5rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .Equity, .Initiatives, .About, .Center, .background, .Mission {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .info {
+        padding: 0 25px;
+    }
+}
+
+img {
+    width: 400px;
+    height: 400px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+
+/* Rest of your CSS... */
+/* Navbar Styles */
+.navbar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 20px;
+    /*transition: all 0.5s ease;*/
+    z-index: 2;
+    width: 100%; /* Make sure the navbar stretches across the full width */
+}
+
+.navbar .container {
+    display: flex; /* Use flexbox to organize content */
+    justify-content: flex-end; /* Align the container's content to the right */
+    align-items: center; /* Align items vertically in the center */
+    width: 100%; /* Optional: Full width for the container */
+}
+
+.navbar-dark .navbar-nav {
+    list-style-type: none; /* Remove the dots */
+    padding-left: 0; /* Remove default padding */
+    display: flex; /* Make the nav items display in a row */
+    align-items: center; /* Center the links vertically */
+    margin: 0; /* Remove any default margin */
+}
+
+.navbar-dark .navbar-nav .nav-item {
+    margin-bottom: 0; /* No space at the bottom of each item */
+    margin-right: 10px; /* Space between the items */
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgb(15, 13, 13);
+    padding: 10px 20px;
+    transition: color 0.3s ease;
+    text-decoration: none; /* Remove the underline */
+    display: block; 
+    font-size: 20px;
+    /* Treat links like block elements for a larger clickable area */
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: rgb(236, 96, 9); /* Set the hover color to red */
+}

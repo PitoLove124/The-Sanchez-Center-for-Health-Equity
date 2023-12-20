@@ -1,0 +1,97 @@
+/* Defining color variables */
+
+:root {
+    --red-pantone: #e63946;
+    --berkeley-blue: #1d3557;
+    --non-photo-blue: #a8dadc;
+    --cerulean: #457b9d;
+    --berkeley-blue: #1d3557;
+}
+
+/* Importing fonts */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&family=Poppins:wght@200&display=swap");
+
+/* Universal styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    #mission {
+    margin-top: 100px; /* Adjust the value as needed */
+}
+
+}
+
+/* General body styling */
+body {
+    background-color: var(--honeydew); /* Using the honeydew color variable */
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Custom color classes */
+.bg-soft-mint {
+    background-color: var(--honeydew); /* Changed to the honeydew color */
+}
+
+.text-deep-teal {
+    color: var(--cerulean); /* Changed to the cerulean color */
+}
+
+.text-gray {
+    color: var(--berkeley-blue); /* Changed to the berkeley-blue color */
+}
+
+/* Styling for the main content area */
+main.container {
+    border-radius: 15px; /* Optional: for rounded corners */
+}
+
+/* Specific styling for the 'About Us' section */
+#team h1 {
+    margin-top: 100px;
+    margin-bottom: 20px;
+    font-weight: 450; /* Lighter font-weight as per the Montserrat font specification */
+    padding-bottom: 20px; /* Space between the title and the content */
+    color: var(--red-pantone); /* Using the red-pantone color variable */
+    padding: 0 20%;
+}
+
+#team p {
+    margin-top: 20px;
+    font-size: 1rem; /* Adjust text size as preferred */
+    line-height: 1.6; /* Improved readability */
+    color: var(--berkeley-blue); /* Using the berkeley-blue color variable */
+    padding: 0 20%;
+}
+.navbar .container {
+    display: flex; /* Use flexbox to organize content */
+    justify-content: flex-end; /* Align the container's content to the right */
+    align-items: center; /* Align items vertically in the center */
+    width: 100%; /* Optional: Full width for the container */
+}
+
+.navbar-dark .navbar-nav {
+    list-style-type: none; /* Remove the dots */
+    padding-left: 0; /* Remove default padding */
+    display: flex; /* Make the nav items display in a row */
+    align-items: center; /* Center the links vertically */
+    margin: 0; /* Remove any default margin */
+}
+
+.navbar-dark .navbar-nav .nav-item {
+    margin-bottom: 0; /* No space at the bottom of each item */
+    margin-right: 10px; /* Space between the items */
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: var(--honeydew); /* Using the honeydew color variable */
+    padding: 10px 20px;
+    transition: color 0.3s ease;
+    text-decoration: none; /* Remove the underline */
+    display: block; /* Treat links like block elements for a larger clickable area */
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: var(--red-pantone); /* Using the red-pantone color variable for hover effect */
+}
